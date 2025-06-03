@@ -21,7 +21,9 @@ import { useState } from "react";
     return (
       <SafeAreaView style={styles.container}>
         
-        <Image style={{ width:115, height:34, marginTop:50}} source={require ('../../assets/images/auralogo.png')} resizeMode="center"/>
+        <Image style={{ width:115, height:34, marginTop:50}} 
+        source={require ('../../assets/images/auralogo.png')}
+         resizeMode="center"/>
         
         <Text style={authStyle.authText}>Sign up</Text>
 
@@ -33,7 +35,9 @@ import { useState } from "react";
             <View style={authStyle.contain}>
                       
              <Text style={authStyle.formText}>Username</Text>
-             <TextInput style={[authStyle.input, {borderWidth:userFocused ? 1 : 0, borderColor:userFocused ? COLORS.primary : 'transparent'}]} cursorColor={COLORS.primary}
+             <TextInput style={[authStyle.input,
+              {borderWidth:userFocused ? 1 : 0, borderColor:userFocused ? COLORS.primary : 'transparent'}]} 
+              cursorColor={COLORS.primary}
              
              onBlur={()=>{
                 setUserFocused(false)
@@ -48,7 +52,9 @@ import { useState } from "react";
             <View style={authStyle.contain}>
               
               <Text style={authStyle.formText}>Email</Text>
-              <TextInput style={[authStyle.input, {borderWidth:emailFocused ? 1 : 0, borderColor:emailFocused ? COLORS.primary : 'transparent'}]} cursorColor={COLORS.primary}
+              <TextInput style={[authStyle.input,
+               {borderWidth:emailFocused ? 1 : 0, borderColor:emailFocused ? COLORS.primary : 'transparent'}]} 
+               cursorColor={COLORS.primary}
               
               onBlur={()=>{
                 setEmailFocused(false)
@@ -64,7 +70,9 @@ import { useState } from "react";
             <View style={authStyle.contain}>
               
               <Text style={authStyle.formText}>Password</Text>
-              <TextInput style={[authStyle.input, {borderWidth:passwordFocused ? 1 : 0, borderColor:passwordFocused ? COLORS.primary : 'transparent'}]} cursorColor={COLORS.primary}
+              <TextInput style={[authStyle.input, 
+              {borderWidth:passwordFocused ? 1 : 0, borderColor:passwordFocused ? COLORS.primary : 'transparent'}]} 
+              cursorColor={COLORS.primary}
               onBlur={()=>{
                 setPasswordFocused(false)
               }}
@@ -122,7 +130,8 @@ import { useState } from "react";
           <TouchableOpacity onPress={()=>{
             router.navigate('./signIn')
             }}>
-            <Text style={authStyle.footernote}>Already have an account? <Text style={{color:COLORS.primary, fontFamily:'PoppinsSemi'}}>Login</Text></Text>
+            <Text style={authStyle.footernote}>Already have an account? <Text 
+            style={{color:COLORS.primary, fontFamily:'PoppinsSemi'}}>Login</Text></Text>
             
           </TouchableOpacity>
 

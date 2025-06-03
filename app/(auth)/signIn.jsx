@@ -18,7 +18,8 @@ const signIn = ()=>{
 
     return (
         <SafeAreaView style={styles.container}>
-            <Image style={{ width:115, height:34, marginTop:50}} source={require ('../../assets/images/auralogo.png')} resizeMode="center"/>
+            <Image style={{ width:115, height:34, marginTop:50}} 
+            source={require ('../../assets/images/auralogo.png')} resizeMode="center"/>
             <Text style={authStyle.authText}>Sign in</Text>
 
             <View style={authStyle.secondaryContain}>
@@ -26,7 +27,9 @@ const signIn = ()=>{
                 <View style={authStyle.contain}>
               
                  <Text style={authStyle.formText}>Email</Text>
-                 <TextInput style={[authStyle.input, {borderWidth:emailFocused ? 1 : 0, borderColor:emailFocused ? COLORS.primary : 'transparent'}]} cursorColor={COLORS.primary}
+                 <TextInput style={[authStyle.input, 
+                 {borderWidth:emailFocused ? 1 : 0, borderColor:emailFocused ? COLORS.primary : 'transparent'}]} 
+                 cursorColor={COLORS.primary}
               
                  onBlur={()=>{
                  setEmailFocused(false)
@@ -42,7 +45,8 @@ const signIn = ()=>{
                 <View style={authStyle.contain}>
               
                  <Text style={authStyle.formText}>Password</Text>
-                 <TextInput style={[authStyle.input, {borderWidth:passwordFocused ? 1 : 0, borderColor:passwordFocused ? COLORS.primary : 'transparent'}]} cursorColor={COLORS.primary}
+                 <TextInput style={[authStyle.input, 
+                 {borderWidth:passwordFocused ? 1 : 0, borderColor:passwordFocused ? COLORS.primary : 'transparent'}]} cursorColor={COLORS.primary}
                  onBlur={()=>{
                   setPasswordFocused(false)
                  }}
@@ -89,7 +93,8 @@ const signIn = ()=>{
             </View>
 
             <TouchableOpacity>
-                <Text style={{color:COLORS.text, textAlign:'right', fontFamily:'PoppinsRegular', marginTop:10}}>Forgot password</Text>
+                <Text style={{color:COLORS.text, textAlign:'right', 
+                    fontFamily:'PoppinsRegular', marginTop:10}}>Forgot password</Text>
 
             </TouchableOpacity>
             
@@ -103,7 +108,8 @@ const signIn = ()=>{
             <TouchableOpacity onPress={()=>{
                 router.navigate('./sign')
             }}>
-                 <Text style={authStyle.footernote}>Don't have an account? <Text style={{color:COLORS.primary, fontFamily:'PoppinsSemi'}}>Signup</Text></Text>
+                 <Text style={authStyle.footernote}>Don't have an account? <Text 
+                 style={{color:COLORS.primary, fontFamily:'PoppinsSemi'}}>Signup</Text></Text>
             
             </TouchableOpacity>
 

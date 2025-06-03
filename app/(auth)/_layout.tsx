@@ -5,8 +5,8 @@ const AuthScreens = ()=>{
         <Stack screenOptions={{
             headerShown:false
         }}>
-            <Stack.Screen name="login"/>
-            <Stack.Screen name="signUp"/>
+            <Stack.Screen name="sign"/>
+            <Stack.Screen name="signIn"/>
 
         </Stack>
     )

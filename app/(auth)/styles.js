@@ -29,7 +29,7 @@ const authStyle = StyleSheet.create({
     home: {
         fontFamily:'PoppinsSemi',
         color:COLORS.white, 
-        fontSize:24
+        fontSize:18
 
     },
 
